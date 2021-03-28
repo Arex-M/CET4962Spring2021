@@ -1,0 +1,40 @@
+/* CSS (Created in New File)*/
+
+/* The background of the page */
+ body{
+    background: url('http://i.stack.imgur.com/jGlzr.png'); /* Background Image */
+    background-color: rgb(163, 169, 172); /* Background Color */
+ }
+
+ .r{  /* Background of the top columns */
+     border:1px solid; /* Specifies the how thick the boarder of an element is. */
+     background: rgb(219, 202, 105); /* Background Color */
+     height: 20px; /* Specifies the height of an element. */
+ }
+ 
+ .rt{ /* Background of the bottom columns */
+     border:1px solid; /* Specifies the how thick the boarder of an element is. */
+     background: rgb(125, 223, 154); /* Background Color */
+     height: 20px; /* Specifies the height of an element. */
+ }
+ 
+ section{ /* Border Background  */
+    margin: auto; /* To horizontally center a block element, use margin: auto  */
+    border: 2px solid; /* Specifies the how thick the boarder of an element is. */
+    text-align: center;
+    width: 500px;
+    padding: 10px;
+    background: rgb(156, 236, 241); /* Background Color */
+ }
+
+ table{ /* Table Font size  */
+    font-size: 30px;
+ } 
+ h1{ /* Header Font size  */
+    font-size: 40px;
+ }
+
+ #error{ /* Error Background */
+    color: red;
+ }
+/* End of CSS */

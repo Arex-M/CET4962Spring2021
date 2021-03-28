@@ -1,0 +1,63 @@
+<!DOCTYPE HTML> <!-- The DOCTYPE must be present. It informs the browser that this is an HTML document: -->
+<HTML> <!-- Defines the start of an HTML document. -->
+<head> <!-- T -->
+<script src="../Grade Calculator/Grade.js"></script>    <!-- Link the JavaScript File -->
+<link rel="stylesheet" href="../Grade Calculator/Grade.css"> <!-- Link the CSS File -->
+
+</head> <!-- T -->
+<body> <!--Start tag of the visible body of the HTML document-->
+    <section>
+     <!-- Heading tags define HTML headings:-->
+     <h1>Student GPA Calculator</h1> <!-- Header: Student GPA Calculator  -->
+    
+     <form>                                                         
+     <!-- 3 Fields for user to enter information -->
+     <input type="text" id="cr" placeholder="Course Name"><br>      <!-- Only Accepts Letters -->
+     <input type="number" id="mr" placeholder="Grade"><br>          <!-- Only Accepts Numbers -->
+     <input type="number" id="ch" placeholder="Number of Credits">  <!-- Only Accepts Numbers -->
+     </form>
+     <!-- When user clicks the button, a function is called -->
+     <button onclick="addRecord()">Enter Course</button><br>        <!-- Saves entered information -->
+     <button onclick="refreshElement()">Clear List</button>         <!-- Resets the entered information -->
+ <center>  
+     <p id="error"><p>
+ <table> <!-- Table with five columns --> <!--"r" referenced in CSS-->
+     <tr>
+         <td class="r" id="cn1"></td> <!-- Displays Course Name --> <!-- CN1 = Course number 1 -->
+         <td class="r" id="ch1"></td> <!-- Displays Number of Credits -->       
+         <td class="r" id="cm1"></td> <!-- Displays Course Grade(Numbers) -->  
+         <td class="r" id="gr1"></td> <!-- Displays Course Grade(Letters) -->
+         <td class="r" id="gp1"></td> <!-- Displays Current GPA --> <!-- Redundant-->
+         <td class="r" id="tp1"></td> <!-- Displays Grade Points -->
+         
+
+     <tr>
+         <td class="rt" id="Scn">Total Grade Points</td>
+         <td class="rt" id="tcr"></td>
+         <td class="rt" id="t"></td>
+         <td class="rt"></td>
+         <td class="rt"></td>
+         <td class="rt" id="tpo"></td>
+         
+
+     </tr>
+     <tr>
+         <td class="rt" id="cgpa"></td>
+         
+     </tr>
+    
+ </table>
+ 
+ 
+ </center>
+  </section>
+      
+      <script>
+    
+    displayCourses();
+    
+    </script>
+ 
+</body> <!--End tag of the visible body of the HTML document-->
+
+</HTML> <!-- Defines the end of an HTML document. -->

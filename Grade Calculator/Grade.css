@@ -1,0 +1,110 @@
+/* CSS (Created in New File)*/
+
+/* The background of the page */
+ body{
+    background: url('http://i.stack.imgur.com/jGlzr.png'); /* Background Image */
+    background-color: rgb(163, 169, 172); /* Background Color */
+ }
+
+ .r{  /* Background of the top columns */
+     border:1px solid; /* Specifies the how thick the boarder of an element is. */
+     background: rgb(219, 202, 105); /* Background Color */
+     height: 20px; /* Specifies the height of an element. */
+ }
+ 
+ .rt{ /* Background of the bottom columns */
+     border:1px solid; /* Specifies the how thick the boarder of an element is. */
+     background: rgb(125, 223, 154); /* Background Color */
+     height: 20px; /* Specifies the height of an element. */
+ }
+ 
+ section{ /* Border Background  */
+    margin: auto; /* To horizontally center a block element, use margin: auto  */
+    border: 2px solid; /* Specifies the how thick the boarder of an element is. */
+    text-align: center;
+    width: 500px;
+    padding: 10px;
+    background: rgb(156, 236, 241); /* Background Color */
+ }
+
+ table{ /* Table Font size  */
+    font-size: 30px;
+ } 
+ h1{ /* Header Font size  */
+    font-size: 40px;
+ }
+
+ #error{ /* Error Background */
+    color: red;
+ }
+
+/* Navigation Bar Styling */
+h2{
+   color: rgb(255, 255, 255);
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   font-size: 20px;
+}
+ nav{
+   height: 10vh;
+   display: flex;
+   list-style: none;
+   width: auto;
+   height: 100%;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 8vh;
+   background-color: #f54642;
+   box-shadow: 0px 3px 10px rgba(8, 5, 5, 0.8);
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ .nav-links{
+   display: flex;
+   justify-content: space-around;
+   padding: 0rem 2rem;
+   width: 70%;
+}
+.nav-links li{
+   list-style: none;
+   border-width: 5px;
+}
+.nav-links a{
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   letter-spacing: 3px;
+   font-weight: bold;
+   font-size: 14;
+}
+
+.nav-button{
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   padding: 0.5rem 2rem;
+   border-spacing: 10em;
+   text-decoration: none;;
+}
+
+.nav-button button{
+   width: 100%;
+   padding: 1rem 0rem;
+   background: #585858;
+   border: none;
+   color: white;
+   cursor: pointer;
+   border-radius: 20px;
+   font-weight: bolder;
+}
+.container {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   /*background: lightblue;*/
+   width: 40%;
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* End of CSS */
