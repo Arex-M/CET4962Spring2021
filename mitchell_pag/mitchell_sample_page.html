@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  min-width: 250px;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* Here starts the CSS code */
+
+/* Setting the padding and border */
+* {
+  box-sizing: border-box;
+}
+
+/* Removing padding and margins */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style items on the list */
+ul li {
+  cursor: crosshair;		/* crosshair cursor */
+  position: relative;		/* center position */
+  padding: 20px 8px 10px 50px;		/* thickness */
+  list-style-type: none;	/* no item marker for list style */
+  background: #eee;		  /* white background */
+  font-size: 22px;			/* font size */
+  transition: 0.1s;			/* hover transition time */
+  
+  /* make the list items unselectable with mouse */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Adjusting hover background color */
+ul li:hover {
+  background: rgb(170, 170, 170);
+}
+
+/* When clicked on, add a background color and stand out text */
+ul li.checked {
+  background: rgb(45, 221, 60);		/* background turns green */
+  color: #fff;						/* text turns white */
+  text-decoration: underline;
+}
+
+/* Create a "check" mark symbol */
+ul li.checked::before {
+  content: '';
+  position: absolute;				/* left position of text */
+  border-color: rgb(0, 0, 0); 	  /* black checkmark */
+  border-style: solid;
+  border-width: 0 4px 4px 0;
+  top: 20px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 18px;
+  width: 7px;
+}
+
+/* Create the "close" button */
+.close {
+  position: absolute;
+  right: 0;						/* all the way to the edge */
+  top: 0;						/* all the way to the edge*/
+  padding: 16px 26px 16px 26px;
+}
+
+.close:hover {
+  background-color: #ff1100;		/* red when mouse over */
+  color: white;						/* close symbol turns white */
+}
+
+/* Style the header */
+.header {
+  background-color: #3669f4;		/* blue header background */
+  padding: 50px 30px;
+  color: white;						/* White header text */
+  text-align: center;				  /* header text in the center */
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create the input */
+input {
+  margin: 0;
+  border: none;				/* no borders */
+  border-radius: 0;
+  width: 70%;				/* extension */
+  padding: 20px;
+  float: left;				/* input box is on the left side */
+  font-size: 16px;
+}
+
+/* Create the "Add" button */
+.addBtn {
+  padding: 20px;				/* matches the input padding */
+  width: 30%;
+  background: #d048f1;		  /* purple background */
+  color: white;				  /* white text */
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;				/* pointer cursor */
+  transition: 0.2s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: green;		/* hover color for add button */
+}
+
+/* ------------------------------------------------------------------ */
+
+</style>
+</head>
+<body>
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">Cool To Do List</h2>
+  <input type="text" id="myInput" placeholder="Type...">
+  <span onclick="newElement()" class="addBtn">To Do</span>
+</div>
+
+<ul id="myUL">
+  <li>Go to the gym</li>
+</ul>
+
+<script>
+
+/* -------------------------------------------------------------------- */
+
+/* Here starts the JS code */
+
+// Put the "close" button to each list item
+var myList = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myList.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myList[i].appendChild(span);
+}
+
+// Delete the list item when clicking close
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add the "check" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Add a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("Type something in the box.");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+
+/* ----------------------------------------------------------------------- */
+</script>
+
+</body>
+</html>
