@@ -1,8 +1,8 @@
 /* CSS (Created in New File)*/
 
 /* The background of the page */
- body{
-    background: url('http://i.stack.imgur.com/jGlzr.png'); /* Background Image */
+ .body{
+    background: url('/assets/background.jpg'); /* Background Image */
     background-color: rgb(163, 169, 172); /* Background Color */
  }
 
