@@ -6,7 +6,7 @@
 .banner{
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(170, 228, 255, 0.26), rgba(255, 255, 255, 0.404)), url(assets/background.jpg);
+    background-image:linear-gradient(rgba(170, 228, 255, 0.26), rgba(255, 255, 255, 0.404)), url(https://arex-m.github.io/CET4962Spring2021/assets/background.jpg);
     background-size: cover;
     background-position: center;
 }
