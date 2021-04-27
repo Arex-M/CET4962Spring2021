@@ -1,72 +1,92 @@
 <!DOCTYPE HTML> <!-- The DOCTYPE must be present. It informs the browser that this is an HTML document: -->
-<HTML> <!-- Defines the start of an HTML document. -->
-<head> <!-- T -->
-<script src="js/Grade.js"></script>    <!-- Link the JavaScript File -->
-<link rel="stylesheet" href="css/Grade.css"> <!-- Link the CSS File -->
+<HTML>
+<!-- Defines the start of an HTML document. -->
+
+<head>
+  <!-- T -->
+  <script src="js/Grade.js"></script> <!-- Link the JavaScript File -->
+  <link rel="stylesheet" href="css/Grade.css"> <!-- Link the CSS File -->
 
 </head> <!-- T -->
-<body> <!--Start tag of the visible body of the HTML document-->
 
-    <nav> <!-- Navigation Bar Settings-->
-      <h2>CET 4962</h2>
-      <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href = "/Grade.html">GPA Calculator</a></li>
-        <li><a href = "/ToDo.html">To Do List</a></li>
-        <li><a href = "/Map.html">Interactive Map</a></li>
-        <li><a>About</a></li>
-      </ul>
-    </nav> <!-- Navigation Bar Settings End-->
+<body>
+  <!--Start tag of the visible body of the HTML document-->
 
-    <section>
-     <!-- Heading tags define HTML headings:-->
-     <h1>Student GPA Calculator</h1> <!-- Header: Student GPA Calculator  -->
-    
-     <form>                                                         
-     <!-- 3 Fields for user to enter information -->
-     <input type="text" id="cr" placeholder="Course Name"><br>      <!-- Only Accepts Letters -->
-     <input type="number" id="mr" placeholder="Grade"><br>          <!-- Only Accepts Numbers -->
-     <input type="number" id="ch" placeholder="Number of Credits">  <!-- Only Accepts Numbers -->
-     </form>
-     <!-- When user clicks the button, a function is called -->
-     <button onclick="addRecord()">Enter Course</button><br>        <!-- Saves entered information -->
-     <button onclick="refreshElement()">Clear List</button>         <!-- Resets the entered information -->
- <center>  
-     <p id="error"><p>
- <table> <!-- Table with five columns --> <!--"r" referenced in CSS-->
-     <tr>
-         <td class="r" id="cn1"></td> <!-- Displays Course Name --> <!-- CN1 = Course number 1 -->
-         <td class="r" id="ch1"></td> <!-- Displays Number of Credits -->       
-         <td class="r" id="cm1"></td> <!-- Displays Course Grade(Numbers) -->  
-         <td class="r" id="gr1"></td> <!-- Displays Course Grade(Letters) -->
-         <td class="r" id="gp1"></td> <!-- Displays Current GPA --> <!-- Redundant-->
-         <td class="r" id="tp1"></td> <!-- Displays Grade Points -->
-         
+  <nav>
+    <!-- Navigation Bar Settings-->
+    <h2>CET 4962</h2>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Grade.html">GPA Calculator</a></li>
+      <li><a href="ToDo.html">To Do List</a></li>
+      <li><a href="Map.html">Interactive Map</a></li>
+      <li><a>About</a></li>
+    </ul>
+  </nav> <!-- Navigation Bar Settings End-->
 
-     <tr>
-         <td class="rt" id="Scn">Total Grade Points</td>
-         <td class="rt" id="tcr"></td>
-         <td class="rt" id="t"></td>
-         <td class="rt"></td>
-         <td class="rt"></td>
-         <td class="rt" id="tpo"></td>
-         
+  <section>
+    <!-- Heading tags define HTML headings:-->
+    <h1>Student GPA Calculator</h1> <!-- Header: Student GPA Calculator  -->
 
-     </tr>
-     <tr>
-         <td class="rt" id="cgpa"></td>
-         
-     </tr>
-    
- </table>
- 
- </center>
+    <form>
+      <!-- 3 Fields for user to enter information -->
+      <input type="text" id="cr" placeholder="Course Name"><br> <!-- Only Accepts Letters -->
+      <input type="number" id="mr" placeholder="Grade"><br> <!-- Only Accepts Numbers -->
+      <input type="number" id="ch" placeholder="Number of Credits"> <!-- Only Accepts Numbers -->
+    </form>
+    <!-- When user clicks the button, a function is called -->
+    <button onclick="addRecord()">Enter Course</button><br> <!-- Saves entered information -->
+    <button onclick="refreshElement()">Clear List</button> <!-- Resets the entered information -->
+    <center>
+      <p id="error">
+      <p>
+      <table>
+        <!-- Table with five columns -->
+        <!--"r" referenced in CSS-->
+        <tr>
+          <td class="r" id="cn1"></td> <!-- Displays Course Name -->
+          <!-- CN1 = Course number 1 -->
+          <td class="r" id="ch1"></td> <!-- Displays Number of Credits -->
+          <td class="r" id="cm1"></td> <!-- Displays Course Grade(Numbers) -->
+          <td class="r" id="gr1"></td> <!-- Displays Course Grade(Letters) -->
+          <td class="r" id="gp1"></td> <!-- Displays Current GPA -->
+          <!-- Redundant-->
+          <td class="r" id="tp1"></td> <!-- Displays Grade Points -->
+
+
+        <tr>
+          <td class="rt" id="Scn">Total Grade Points</td>
+          <td class="rt" id="tcr"></td>
+          <td class="rt" id="t"></td>
+          <td class="rt"></td>
+          <td class="rt"></td>
+          <td class="rt" id="tpo"></td>
+
+
+        </tr>
+        <tr>
+          <td class="rt" id="cgpa"></td>
+
+        </tr>
+
+      </table>
+
+    </center>
   </section>
 
   <script>
     displayCourses();
   </script>
- 
-</body> <!--End tag of the visible body of the HTML document-->
+  <h3>Instructions</h3>
+      <ol>
+        <li>Enter the name of the couse in the indicated box "Course Name". </li>
+        <li>Enter the final grade of the course as a number in the indicated box "Grade".</li>
+        <li>Enter the number of credits of the course in the indicated boc "Credits".</li>
+        <li>After the above information is entered, click "Enter Course".</li>
+        <li>Steps 1-4 can be repeated for each new course.</li>
+        <li>Click "Clear List" to reset entered courses.</li>
+      </ol>
+</body>
+<!--End tag of the visible body of the HTML document-->
 
 </HTML> <!-- Defines the end of an HTML document. -->

@@ -37,7 +37,14 @@
  #error{ /* Error Background */
     color: red;
  }
+/* Intructions Styling */
+h3{ /* Header Font size  */
+   font-size: 40px;
+}
 
+ol{
+   font-size: 20px;
+}
 /* Navigation Bar Styling */
 h2{
    color: rgb(255, 255, 255);
