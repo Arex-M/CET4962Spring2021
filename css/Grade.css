@@ -5,6 +5,10 @@
    background: url('../assets/GPA\ -\ background.jpg'); /* Background Image */
  }
 
+ th{
+   font-size: 15px;
+ }
+
  .r{  /* Background of the top columns */
      border:1px solid; /* Specifies the how thick the boarder of an element is. */
      background: rgb(219, 202, 105); /* Background Color */
