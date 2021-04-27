@@ -5,47 +5,63 @@
    background: url('../assets/GPA\ -\ background.jpg'); /* Background Image */
  }
 
+ /* The top row font size*/
  th{
-   font-size: 15px;
+   font-size: 15px; /* Font size */
+   color: rgb(255, 255, 255); /* Font color */
+   border-width: 5px; /* Specifies the how thick the boarder of an element is. */
+   border-style: groove; /* Specifies boarder syle. */
+   border-color: rgb(255, 255, 255); /* Border color */
+   background: rgb(151, 153, 153); /* Background Color */
  }
 
- .r{  /* Background of the top columns */
-     border:1px solid; /* Specifies the how thick the boarder of an element is. */
-     background: rgb(219, 202, 105); /* Background Color */
+ .r{  /* Background of the middle row */
+     border-width: 5px; /* Specifies the how thick the boarder of an element is. */
+     border-style: groove; /* Specifies boarder syle. */
+     background: rgb(49, 224, 236); /* Background Color */
      height: 20px; /* Specifies the height of an element. */
  }
  
- .rt{ /* Background of the bottom columns */
-     border:1px solid; /* Specifies the how thick the boarder of an element is. */
-     background: rgb(125, 223, 154); /* Background Color */
+ .rt{ /* Background of the bottom row */
+     border-width: 5px; /* Specifies the how thick the boarder of an element is. */
+     border-style: groove; /* Specifies boarder syle. */
+     background: rgb(49, 224, 236); /* Background Color */
      height: 20px; /* Specifies the height of an element. */
  }
  
  section{ /* Border Background  */
     margin: auto; /* To horizontally center a block element, use margin: auto  */
-    border: 2px solid; /* Specifies the how thick the boarder of an element is. */
+    border-width: 5px; /* Specifies the how thick the boarder of an element is. */
+    border-style: groove; /* Specifies boarder syle. */
+    border-color: rgb(255, 255, 255); /* Border color */
     text-align: center;
     width: 500px;
     padding: 10px;
-    background: rgb(156, 236, 241); /* Background Color */
+    background: rgb(40, 50, 51); /* Background Color */
  }
 
  table{ /* Table Font size  */
-    font-size: 30px;
+    font-size: 30px; /* Font size */
+    color: rgb(255, 255, 255); /* Font color */
+    border-width: 5px; /* Specifies the how thick the boarder of an element is. */
+    border-style: groove; /* Specifies boarder syle. */
  } 
  h1{ /* Header Font size  */
-    font-size: 40px;
+    font-size: 40px; /* Font size */
+    color: rgb(255, 255, 255); /* Font color */
+    border-style: groove; /* Specifies boarder syle. */
+    border-width: 5px; /* Specifies the how thick the boarder of an element is. */
  }
 
  #error{ /* Error Background */
-    color: red;
+    color: red; /* Font color */
  }
 
 /* Intructions Styling */
 h3{ /* Instructions Header  */
    font-size: 40px; /* Header Font size  */
    text-align: center; /* Text Position  */
-   margin-bottom: -7px;
+   margin-bottom: -7px; /* Reduce spacing between Header and next element */
 }
 ol{ /* Instructions List  */
    font-size: 20px; /* List Font size  */
