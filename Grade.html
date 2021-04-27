@@ -9,20 +9,21 @@
 
 </head> <!-- T -->
 
-<body>
-  <!--Start tag of the visible body of the HTML document-->
-
-  <nav>
-    <!-- Navigation Bar Settings-->
-    <h2>CET 4962</h2>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Grade.html">GPA Calculator</a></li>
-      <li><a href="ToDo.html">To Do List</a></li>
-      <li><a href="Map.html">Interactive Map</a></li>
-      <li><a>About</a></li>
-    </ul>
-  </nav> <!-- Navigation Bar Settings End-->
+<body><!--Start tag of the visible body of the HTML document-->
+  
+  <!--Navigation Bar-->
+  <div class="banner">
+    <div class="navbar">
+        <h2>CET 4962</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Grade.html">GPA Calculator</a></li>
+            <li><a href="ToDo.html">To Do List</a></li>
+            <li><a href="Map.html">Interactive Map</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+  </div> <!--End of Navigation Bar-->
 
   <section>
     <!-- Heading tags define HTML headings:-->
@@ -34,9 +35,11 @@
       <input type="number" id="mr" placeholder="Grade"><br> <!-- Only Accepts Numbers -->
       <input type="number" id="ch" placeholder="Number of Credits"> <!-- Only Accepts Numbers -->
     </form>
+    
     <!-- When user clicks the button, a function is called -->
     <button onclick="addRecord()">Enter Course</button><br> <!-- Saves entered information -->
     <button onclick="refreshElement()">Clear List</button> <!-- Resets the entered information -->
+    
     <center>
       <p id="error">
       <p>
@@ -50,9 +53,7 @@
           <td class="r" id="cm1"></td> <!-- Displays Course Grade(Numbers) -->
           <td class="r" id="gr1"></td> <!-- Displays Course Grade(Letters) -->
           <td class="r" id="gp1"></td> <!-- Displays Current GPA -->
-          <!-- Redundant-->
           <td class="r" id="tp1"></td> <!-- Displays Grade Points -->
-
 
         <tr>
           <td class="rt" id="Scn">Total Grade Points</td>
@@ -61,22 +62,21 @@
           <td class="rt"></td>
           <td class="rt"></td>
           <td class="rt" id="tpo"></td>
-
-
         </tr>
+
         <tr>
           <td class="rt" id="cgpa"></td>
-
         </tr>
 
       </table>
-
     </center>
   </section>
 
   <script>
     displayCourses();
   </script>
+
+  <!--GPA Calculator Instructions-->
   <h3>Instructions</h3>
       <ol>
         <li>Enter the name of the couse in the indicated box "Course Name". </li>
@@ -85,7 +85,7 @@
         <li>After the above information is entered, click "Enter Course".</li>
         <li>Steps 1-4 can be repeated for each new course.</li>
         <li>Click "Clear List" to reset entered courses.</li>
-      </ol>
+      </ol> <!--End of GPA Calculator Instructions-->
 </body>
 <!--End tag of the visible body of the HTML document-->
 
