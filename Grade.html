@@ -45,6 +45,15 @@
       <p>
       <table>
         <!-- Table with five columns -->
+        <tr>
+          <th></th>
+          <th>Total Credits</th> <!-- Displays "Total Credits" in table -->
+          <th>Grade (#)</th> <!-- Displays "Grade (#)" in table -->
+          <th>Grade (Letter)</th> <!-- Displays "Grade (Letter)" in table -->
+          <th>Current GPA</th> <!-- Displays "Current GPA" in table -->
+          <th>Grade Points</th> <!-- Displays "Grade Points" in table -->
+        </tr>
+
         <!--"r" referenced in CSS-->
         <tr>
           <td class="r" id="cn1"></td> <!-- Displays Course Name -->
@@ -54,18 +63,19 @@
           <td class="r" id="gr1"></td> <!-- Displays Course Grade(Letters) -->
           <td class="r" id="gp1"></td> <!-- Displays Current GPA -->
           <td class="r" id="tp1"></td> <!-- Displays Grade Points -->
-
+        
+        <!--"rt" referenced in CSS-->
         <tr>
-          <td class="rt" id="Scn">Total Grade Points</td>
-          <td class="rt" id="tcr"></td>
-          <td class="rt" id="t"></td>
-          <td class="rt"></td>
-          <td class="rt"></td>
-          <td class="rt" id="tpo"></td>
+          <td class="rt" id="Scn">Total</td> <!-- Displays "Total" in table -->
+          <td class="rt" id="tcr"></td> <!-- Displays total number of Credits in table -->
+          <td class="rt" id="t"></td> <!-- Displays total number of Grades in table -->
+          <td class="rt"></td> <!-- Displays a blank box in table -->
+          <td class="rt"></td> <!-- Displays a blank box in table -->
+          <td class="rt" id="tpo"></td> <!-- Displays total Grade Points in table -->
         </tr>
 
         <tr>
-          <td class="rt" id="cgpa"></td>
+          <td class="rt" id="cgpa"></td> <!-- Displays Final GPA -->
         </tr>
 
       </table>
