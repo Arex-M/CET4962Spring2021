@@ -7,6 +7,7 @@
 body {
   margin: 0;
   min-width: 250px;
+  background: url('../assets/GPA\ -\ background.jpg'); /* Background Image */
 }
 
 /* Removing padding and margins */
@@ -114,3 +115,50 @@ input {
 .addBtn:hover {
   background-color: green;		/* hover color for add button */
 }
+
+/* Navigation Bar Styling */
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: rgb(255, 154, 22);
+  display: block;
+  margin: auto;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .navbar ul li{
+      display: block;
+  }
+  .navbar{
+      position: absolute;
+      background: #ddd;
+      height: 100vh;
+      width: 200px;
+  }
+}
+
