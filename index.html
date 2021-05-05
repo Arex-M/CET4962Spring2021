@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <link href="css/index_page.css" type="text/css" rel="stylesheet">
-    <head>
-        <title>Welcome!</title>
-    </head>
-    <script src="js/index_page.js"></script>
-    <body>
-        <div class="banner">
-            <div class="navbar">
-                <h1>CET 4962</h1>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="Grade.html">GPA Calculator</a></li>
-                    <li><a href="ToDo.html">To Do List</a></li>
-                    <li><a href="Map.html">Interactive Map</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
-        </div>
-    </body>
-</html>
+  <!--This is the file for the front page of our website-->
+  <link rel="stylesheet" href= "css/index.css" type="text/css"  />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>City Tech CET 4962 Website</title>
+</head>
+<body>
+  <nav> <!-- Creates the to navigation bar-->
+    <div class="logo"> <!--Logo-->
+      <img src="assets/City_Tech.png" height="50">
+    </div>
+    <div class="title"><!--Title-->
+      <p style="font-size:30px">Welcome To Your Student's </p>
+    </div>
+    <div class="navbar_menu"> <!--Menu-->
+      <ul>
+        <li><a href="Grade.html">Grade</a></li>
+        <li><a href="ToDo.html">ToDo</a></li>
+        <li><a href="Map.html">Map</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="slideshow"><!--Creating slides-->
+    <div class="slides">
+      <input type="radio" name="pageMark" id="btn1"> 
+      <input type="radio" name="pageMark" id="btn2"> 
+      <input type="radio" name="pageMark" id="btn3"> 
+      <div class="slide first">
+        <img src="assets/Slideshow_Temp 1.jpg" >
+      </div>
+      <div class="slide">
+        <img src="assets/Slideshow_Temp 2.jpg" >
+      </div>
+      <div class="slide">
+        <img src="assets/Slideshow_Temp 3.jpg" >
+      </div>
+      <div class="autoslide">
+        <div class="auto_p1"></div>
+        <div class="auto_p2"></div>
+        <div class="auto_p3"></div>
+      </div>
+    </div>
+    <div class="slidepage">
+      <label for="btn1" class="btn_pgnum"></label>
+      <label for="btn2" class="btn_pgnum"></label>
+      <label for="btn3" class="btn_pgnum"></label>
+    </div>
+  </div>
+  <div class="AdApps">
+    <div class="sections">
+        <h1><u>Confused by GPA?</u></h1>
+        <h3>Uses our GPA Calculator and take control of your grades and get that 4.0GPA!</h3>
+        <a href="Grade.html"><img src="assets/Calculator.png" width="100"></a>
+    </div>
+    <div class="sections">
+        <h1><u>Anxious about Deadlines?</u></h1>
+        <h3>Uses our ToDo list and stress no more an never forget a due date again!</h3>
+        <a href="ToDo.html"><img src="assets/Todo.png" width="100"> </a>
+    </div>
+    <div class="sections">
+        <h1><u>Getting lost on Campus?</u></h1>
+        <h3>Uses our Interactive map so you will no longer wonder around aimlessly!</h3>
+        <a href="Map.html"><img src="assets/map.png" width="100"></a>
+    </div>        
+  </div>
+  <div>
+    <h1>About City Tech</h1>
+    <p>New York City College of Technology is a baccalaureate and associate degree-granting institution committed to providing broad access to high quality technological and professional education for a diverse urban population. City Tech’s distinctive emphasis on applied skills and place-based learning built upon a vibrant general education foundation equips students with both problem-solving skills and an understanding of the social contexts of technology that make its graduates competitive. A multi- disciplinary approach and creative collaboration are hallmarks of the academic programs. As a community City Tech nurtures an atmosphere of inclusion, respect, and open-mindedness in which all members can flourish.</p>
+    <h1>About Us</h1>
+    <p>This website was created as a class project from the students of the Computer Engineering Technology Department. This website was design to have helpfull tools to help you successed in CityTech.  This website was a collabartive effort from Jabari Amos, Mitchell Ayzenberg, Alex Mei, and Kenny Luong. </p>
+  </div>
+  <script src="index.js" type="text/javascript"> </script>
+</body>
