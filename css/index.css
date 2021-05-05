@@ -21,7 +21,6 @@ body{
 nav{
   height: 50px;
   width: 100%;
-  position: sticky;
   display: flex;
   align-items: flex-end;
   background-image: linear-gradient(#312f30,#0f0b0c)
