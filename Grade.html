@@ -31,9 +31,9 @@
 
     <form>
       <!-- 3 Fields for user to enter information -->
-      <input type="text" id="cr" placeholder="Course Name"><br> <!-- Only Accepts Letters -->
-      <input type="number" id="mr" placeholder="Grade"><br> <!-- Only Accepts Numbers -->
-      <input type="number" id="ch" placeholder="Number of Credits"> <!-- Only Accepts Numbers -->
+      <input type="text" id="cne" placeholder="Course Name"><br> <!-- Only Accepts Letters -->
+      <input type="number" id="gne" placeholder="Grade"><br> <!-- Only Accepts Numbers -->
+      <input type="number" id="cve" placeholder="Number of Credits"> <!-- Only Accepts Numbers -->
     </form>
     
     <!-- When user clicks the button, a function is called -->
@@ -54,28 +54,28 @@
           <th>Grade Points</th> <!-- Displays "Grade Points" in table -->
         </tr>
 
-        <!--"r" referenced in CSS-->
+        <!--"a" referenced in CSS-->
         <tr>
-          <td class="r" id="cn1"></td> <!-- Displays Course Name -->
-          <!-- CN1 = Course number 1 -->
-          <td class="r" id="ch1"></td> <!-- Displays Number of Credits -->
-          <td class="r" id="cm1"></td> <!-- Displays Course Grade(Numbers) -->
-          <td class="r" id="gr1"></td> <!-- Displays Course Grade(Letters) -->
-          <td class="r" id="gp1"></td> <!-- Displays Current GPA -->
-          <td class="r" id="tp1"></td> <!-- Displays Grade Points -->
+          <td class="a" id="crsn"></td> <!-- Displays Course Name -->
+          <!-- crsn = Course number 1 -->
+          <td class="a" id="crdsn"></td> <!-- Displays Number of Credits -->
+          <td class="a" id="cgn"></td> <!-- Displays Course Grade(Numbers) -->
+          <td class="a" id="cgl"></td> <!-- Displays Course Grade(Letters) -->
+          <td class="a" id="gpa"></td> <!-- Displays Current GPA -->
+          <td class="a" id="gps"></td> <!-- Displays Grade Points -->
         
-        <!--"rt" referenced in CSS-->
+        <!--"b" referenced in CSS-->
         <tr>
-          <td class="rt" id="Scn">Total</td> <!-- Displays "Total" in table -->
-          <td class="rt" id="tcr"></td> <!-- Displays total number of Credits in table -->
-          <td class="rt" id="t"></td> <!-- Displays total number of Grades in table -->
-          <td class="rt"></td> <!-- Displays a blank box in table -->
-          <td class="rt"></td> <!-- Displays a blank box in table -->
-          <td class="rt" id="tpo"></td> <!-- Displays total Grade Points in table -->
+          <td class="b" id="Scn">Total</td> <!-- Displays "Total" in table -->
+          <td class="b" id="tcr"></td> <!-- Displays total number of Credits in table -->
+          <td class="b" id="tot"></td> <!-- Displays total number of Grades in table -->
+          <td class="b"></td> <!-- Displays a blank box in table -->
+          <td class="b"></td> <!-- Displays a blank box in table -->
+          <td class="b" id="tgp"></td> <!-- Displays total Grade Points in table -->
         </tr>
 
         <tr>
-          <td class="rt" id="cgpa"></td> <!-- Displays Final GPA -->
+          <td class="b" id="cgpa"></td> <!-- Displays Final GPA -->
         </tr>
 
       </table>
