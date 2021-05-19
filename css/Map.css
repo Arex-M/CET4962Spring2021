@@ -4,13 +4,11 @@
     box-sizing: border-box;
 }
 
-div {
-    overflow-x: hidden; 
-}
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: -webkit-repeating-linear-gradient(rgb(255, 255, 255), rgba(128, 186, 219, 0.822))
+    background-image: -webkit-repeating-linear-gradient(rgb(255, 255, 255), rgba(128, 186, 219, 0.822));
+    overflow-x: hidden;
 }
 
 .topnav {
@@ -122,7 +120,7 @@ body {
 }
 
 .slide1 {
-    background-image: url("/assets/Academic.jpg");
+    background-image: url("../assets/Academic.jpg");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -133,7 +131,7 @@ body {
 }
 
 .slide2 {
-    background-image: url("/assets/Atrium.jpg");
+    background-image: url("../assets/Atrium.jpg");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -144,7 +142,7 @@ body {
 }
 
 .slide3 {
-    background-image: url("/assets/vorhees.jpg");
+    background-image: url("../assets/vorhees.jpg");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -155,7 +153,7 @@ body {
 }
 
 .slide4 {
-    background-image: url("/assets/L_building.PNG");
+    background-image: url("../assets/L_building.PNG");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -166,7 +164,7 @@ body {
 }
 
 .slide5 {
-    background-image: url("/assets/general_b.PNG");
+    background-image: url("../assets/general_b.PNG");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -177,7 +175,7 @@ body {
 }
 
 .slide6 {
-    background-image: url("/assets/p_building.PNG");
+    background-image: url("../assets/p_building.PNG");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -188,7 +186,7 @@ body {
 }
 
 .slide7 {
-    background-image: url("/assets/howard_b.PNG");
+    background-image: url("../assets/howard_b.PNG");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -199,7 +197,7 @@ body {
 }
 
 .slide8 {
-    background-image: url("/assets/enviro.PNG");
+    background-image: url("../assets/enviro.PNG");
     background-position: center;
     background-size: cover;
     width: 100%;
