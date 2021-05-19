@@ -15,14 +15,14 @@
    background: rgb(151, 153, 153); /* Background Color */
  }
 
- .r{  /* Background of the middle row */
+ .a{  /* Background of the middle row */
      border-width: 5px; /* Specifies the how thick the boarder of an element is. */
      border-style: groove; /* Specifies boarder syle. */
      background: rgb(49, 224, 236); /* Background Color */
      height: 20px; /* Specifies the height of an element. */
  }
  
- .rt{ /* Background of the bottom row */
+ .b{ /* Background of the bottom row */
      border-width: 5px; /* Specifies the how thick the boarder of an element is. */
      border-style: groove; /* Specifies boarder syle. */
      background: rgb(49, 224, 236); /* Background Color */
