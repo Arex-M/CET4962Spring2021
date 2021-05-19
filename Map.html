@@ -5,55 +5,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Map.css">
+    <link rel="stylesheet" href="/css/Map.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <title>Interactive Map</title>
 </head>
 
 <body>
-    <nav>
-        <h1>CET 4962</h1>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href = "Grade.html">GPA Calculator</a></li>
-            <li><a href = "ToDo.html">To Do List</a></li>
-            <li><a href = "Map.html">Interactive Map</a></li>
-            <li><a>About</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">CET 4962</a>
+            <a href="Grade.html">GPA Calculator</a></li>
+            <a href="ToDo.html">To Do List</a>
+            <a href="Map.html">Interactive Map</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </nav>
-    <div class="nav-button">
-        <button>Academic Complex</button>
-        <button>Enviromental Center</button>
-        <button>General Building</button>
-        <button>Howard Building</button>
-        <button>Library Building</button>
-        <button>Midway Building</button>
-        <button>Namm Hall</button>
-        <button>Pearl St. Building</button>
-        <button>Voorhees Hall</button>
-        <button>Subway</button>
-    </div>
+    <h1 class="title1">OUR CAMPUS</h1>
     <div class="container">
-        <div class="card">
-            <div class="house">
-                <div class="circle"></div>
-                <img src="assets/house_big.png" alt="house">
-            </div>
-            <div class="info">
-                <h1 class="title">House</h1>
-                <h3>Lorem ipsum dolor, sit amet consedoloribus. Esse, neque?</h3>
-                <div class="buildings">
-                    <button>Namn</button>
-                    <button class="active">Vorhees</button>
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide1">
+                        <h2 class = "academic" id="text"><a href="#box1" style="text-decoration: none;">Academic Complex</a></h2>
+                    </div>
                 </div>
-                <div class="principal">
-                    <button>Principal</button>
+                <div class="swiper-slide">
+                    <div class="slide2">
+                        <h2 class = "namm" id="text"><a href="#box2" style="text-decoration: none;">Namm</a></h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide3">
+                        <h2 class = "vorhees" id="text"><a href="#box3" style="text-decoration: none;">Vorhees</a></h2>
+                    </div>    
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide4">
+                        <h2 class = "library" id="text"><a href="#box4" style="text-decoration: none;">Library Building</a></h2>
+                    </div> 
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide5">
+                        <h2 class = "general" id="text"><a href="#box5" style="text-decoration: none;">General Building</a></h2>
+                    </div> 
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide6">
+                        <h2 class = "pearl" id="text"><a href="#box6" style="text-decoration: none;">Pearl St. Building</a></h2>
+                    </div> 
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide7">
+                        <h2 class = "howard" id="text"><a href="#box7" style="text-decoration: none;">Howard Building</a></h2>
+                    </div> 
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide8">
+                        <h2 class = "enviro" id="text"><a href="#box8" style="text-decoration: none;">Environmental Center</a></h2>
+                    </div> 
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/map.js"></script>
-    Map
-    <a href="index.html">Back to the front page</a>
+    <div class="container_2">
+        <h1>Campus Building Information</h1>
+        <div class="box1" id="box1">
+            <h2>Academic Complex</h2>
+            <a class="content-before">More Info</a>
+            <p class="content-after">Information</p>
+        </div>
+        <div class="box2" id="box2">
+            <h2>Namm Hall</h2>
+            <a class="content-before">More Info</a>
+            <p class="content-after">Information</p>
+        </div>
+        <div class="box3" id="box3">
+            <h2>Vorhees Building</h2>
+            <a class="content-before">More Info</a>
+            <p class="content-after">Information</p>
+        </div>
+        <div class="box4" id="box4">
+            <h2>Library Building</h2>
+            <a class="content-before">More Info</a>
+            <p class="content-after">Information</p>
+        </div>
+        <div class="box5" id="box5">
+            <h2>General Building</h2>
+            <a class="content-before">More Info</a>
+            <p class="content-after">Information</p>
+        </div>
+        <div class="box6" id="box6">
+            <h2>Pearl St. Building</h2>
+            <a class="content-before">More Info</a>
+            <p class="content-after">Information</p>
+        </div>
+        <div class="box7" id="box7">
+            <h2>Howard Building</h2>
+            <a class="content-before">More Info</a>
+            <p class="content-after">Information</p>
+        </div>
+        <div class="box8" id="box8">
+            <h2>Environmental Center</h2>
+            <a class="content-before">More Info</a>
+            <p class="content-after">Information</p>
+    </div>
+    <div class="container_3">
+        <h1>Campus Map</h1>
+    </div>
+    <div class="map-wrapper">
+        <div id="map" class="map">
+        </div>
+    </div>
+    <div class="overlay-container">
+        <span class="overlay-text" id="building"></span><br>
+    </div>
+
+    <footer class="footer">
+        <a>Footer</a>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/page_map.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+    <script src="js/map_API.js"></script>
 </body>
 
 </html>
