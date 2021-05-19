@@ -1,13 +1,3 @@
-/*function addClass() {
-  const moreinfo = document.querySelector('#info');
-  addEventListener.addEventListener('click', () => {
-    moreinfo.classList.add('.bg');
-
-  })
-
-}
-window.onload = addClass;*/
-
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 100,
